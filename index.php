@@ -27,6 +27,7 @@
 <nav class="nav" id="nav">
     <div class="nav-inner">
         <a href="#" class="nav-logo">
+            <img src="favicon/favicon-32x32.png" alt="PTC Bot Logo" class="nav-logo-img">
             <span class="logo-bracket">[</span>PTC<span class="logo-dot">.</span>Bot<span class="logo-bracket">]</span>
         </a>
         <div class="nav-links">
