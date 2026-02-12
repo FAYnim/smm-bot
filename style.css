@@ -566,6 +566,10 @@ img {
     opacity: 0.8;
 }
 
+.problem-icon i {
+    font-size: 32px;
+}
+
 .problem-card h3 {
     font-family: var(--font-display);
     font-size: 1.15rem;
@@ -694,6 +698,10 @@ img {
     margin-bottom: 18px;
 }
 
+.feature-icon-wrap i {
+    font-size: 24px;
+}
+
 .feature-card h3 {
     font-family: var(--font-display);
     font-size: 1rem;
@@ -764,6 +772,10 @@ img {
     opacity: 0.7;
 }
 
+.revenue-step-icon i {
+    font-size: 36px;
+}
+
 .revenue-step h3 {
     font-family: var(--font-display);
     font-size: 1.1rem;
@@ -780,6 +792,10 @@ img {
 .revenue-arrow {
     color: var(--text-muted);
     flex-shrink: 0;
+}
+
+.revenue-arrow i {
+    font-size: 24px;
 }
 
 .revenue-highlight {
@@ -801,6 +817,10 @@ img {
     color: var(--accent-amber);
     flex-shrink: 0;
     margin-top: 2px;
+}
+
+.revenue-highlight-icon i {
+    font-size: 24px;
 }
 
 .revenue-highlight p {
@@ -899,16 +919,20 @@ img {
     color: var(--text-tertiary);
 }
 
+.demo-screenshot-placeholder i {
+    font-size: 48px;
+}
+
 .demo-video {
     cursor: pointer;
 }
 
-.demo-video svg {
+.demo-video i {
     opacity: 0.5;
     transition: all 0.3s;
 }
 
-.demo-video:hover svg {
+.demo-video:hover i {
     opacity: 0.8;
     color: var(--accent-cyan);
 }
@@ -1007,6 +1031,10 @@ img {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.license-col h3 i {
+    font-size: 20px;
 }
 
 .license-allowed h3 { color: var(--accent-success); }
@@ -1236,9 +1264,11 @@ img {
     color: var(--text-secondary);
 }
 
-.pricing-includes svg {
+.pricing-includes i {
     color: var(--accent-success);
     flex-shrink: 0;
+    font-size: 16px;
+    width: 16px;
 }
 
 .pricing-notice {
@@ -1368,6 +1398,7 @@ img {
     flex-shrink: 0;
     color: var(--text-tertiary);
     transition: transform 0.4s var(--ease-out-expo), color 0.3s;
+    font-size: 16px;
 }
 
 .faq-item.open .faq-chevron {

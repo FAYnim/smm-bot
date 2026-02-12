@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -65,7 +66,7 @@
         <div class="hero-actions anim-fade-up anim-delay-3">
             <a href="#pricing" class="btn btn-primary btn-glow">
                 <span>Get Source Code Now</span>
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <i class="fa-solid fa-arrow-right"></i>
             </a>
             <a href="#features" class="btn btn-ghost">
                 <span>Explore Features</span>
@@ -135,28 +136,28 @@
         <div class="problem-grid">
             <div class="problem-card anim-slide-in">
                 <div class="problem-icon">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    <i class="fa-solid fa-clock"></i>
                 </div>
                 <h3>Months of Development</h3>
                 <p>Building a PTC system from zero means 3-6 months of architecture, testing, and debugging. Time you could spend growing your business.</p>
             </div>
             <div class="problem-card anim-slide-in" style="--delay: 0.1s">
                 <div class="problem-icon">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                    <i class="fa-solid fa-layer-group"></i>
                 </div>
                 <h3>Complex Wallet Logic</h3>
                 <p>Deposit tracking, withdrawal processing, balance management, commission calculations — one bug and your users lose trust.</p>
             </div>
             <div class="problem-card anim-slide-in" style="--delay: 0.2s">
                 <div class="problem-icon">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    <i class="fa-solid fa-users"></i>
                 </div>
                 <h3>Role Management Hell</h3>
                 <p>Admin, Client, Worker — each with different permissions, dashboards, and flows. The architectural complexity alone kills most projects.</p>
             </div>
             <div class="problem-card anim-slide-in" style="--delay: 0.3s">
                 <div class="problem-icon">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    <i class="fa-solid fa-dollar-sign"></i>
                 </div>
                 <h3>Monetization Guesswork</h3>
                 <p>Commission models, fee structures, payment flows — figuring out the right revenue architecture takes expensive trial and error.</p>
@@ -212,7 +213,7 @@
         <div class="features-grid">
             <div class="feature-card anim-slide-in">
                 <div class="feature-icon-wrap">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    <i class="fa-brands fa-telegram"></i>
                 </div>
                 <h3>Telegram Integration</h3>
                 <p>Full Telegram Bot API integration via webhook. Real-time command handling, inline keyboards, and notification system.</p>
@@ -220,7 +221,7 @@
             
             <div class="feature-card anim-slide-in" style="--delay: 0.05s">
                 <div class="feature-icon-wrap">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    <i class="fa-solid fa-desktop"></i>
                 </div>
                 <h3>Campaign Management</h3>
                 <p>Create, manage, and monitor advertising campaigns. Set budgets, target audiences, and track completion rates.</p>
@@ -228,7 +229,7 @@
             
             <div class="feature-card anim-slide-in" style="--delay: 0.1s">
                 <div class="feature-icon-wrap">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 10h20"/><path d="M6 16h4"/></svg>
+                    <i class="fa-solid fa-wallet"></i>
                 </div>
                 <h3>Wallet System</h3>
                 <p>Full-featured digital wallet with deposits, withdrawals, balance tracking, and transaction history for all user roles.</p>
@@ -236,7 +237,7 @@
             
             <div class="feature-card anim-slide-in" style="--delay: 0.15s">
                 <div class="feature-icon-wrap">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                    <i class="fa-solid fa-square-check"></i>
                 </div>
                 <h3>Proof Verification</h3>
                 <p>Workers submit proof of task completion. Automated and manual verification flows ensure campaign quality.</p>
@@ -244,7 +245,7 @@
             
             <div class="feature-card anim-slide-in" style="--delay: 0.2s">
                 <div class="feature-icon-wrap">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+                    <i class="fa-solid fa-pen-to-square"></i>
                 </div>
                 <h3>Admin Panel</h3>
                 <p>Full-featured web admin panel. Manage users, campaigns, withdrawals, settings, and monitor platform health.</p>
@@ -252,7 +253,7 @@
             
             <div class="feature-card anim-slide-in" style="--delay: 0.25s">
                 <div class="feature-icon-wrap">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    <i class="fa-solid fa-users"></i>
                 </div>
                 <h3>Multi-Role System</h3>
                 <p>Three distinct roles — Admin, Client, Worker — each with tailored permissions, interfaces, and capabilities.</p>
@@ -260,7 +261,7 @@
             
             <div class="feature-card anim-slide-in" style="--delay: 0.3s">
                 <div class="feature-icon-wrap">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                    <i class="fa-solid fa-chart-line"></i>
                 </div>
                 <h3>Analytics & Logs</h3>
                 <p>Track everything. User activity, campaign performance, financial transactions, system events — all logged and queryable.</p>
@@ -268,7 +269,7 @@
             
             <div class="feature-card anim-slide-in" style="--delay: 0.35s">
                 <div class="feature-icon-wrap">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                    <i class="fa-solid fa-gear"></i>
                 </div>
                 <h3>Account Management</h3>
                 <p>User registration, profile management, KYC options, account status controls, and bulk user operations.</p>
@@ -289,33 +290,33 @@
             <div class="revenue-step anim-slide-in">
                 <div class="revenue-step-num">1</div>
                 <div class="revenue-step-icon">
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                    <i class="fa-solid fa-dollar-sign"></i>
                 </div>
                 <h3>Client Deposits</h3>
                 <p>Advertisers fund their wallet to create PTC campaigns</p>
             </div>
             
             <div class="revenue-arrow anim-slide-in">
-                <svg width="40" height="20" viewBox="0 0 40 20"><path d="M0 10h32m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                <i class="fa-solid fa-arrow-right-long"></i>
             </div>
             
             <div class="revenue-step anim-slide-in" style="--delay: 0.1s">
                 <div class="revenue-step-num">2</div>
                 <div class="revenue-step-icon">
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                    <i class="fa-solid fa-desktop"></i>
                 </div>
                 <h3>Campaign Runs</h3>
                 <p>Workers view ads, complete tasks, submit proof</p>
             </div>
             
             <div class="revenue-arrow anim-slide-in">
-                <svg width="40" height="20" viewBox="0 0 40 20"><path d="M0 10h32m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                <i class="fa-solid fa-arrow-right-long"></i>
             </div>
             
             <div class="revenue-step anim-slide-in" style="--delay: 0.2s">
                 <div class="revenue-step-num">3</div>
                 <div class="revenue-step-icon">
-                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                    <i class="fa-solid fa-arrow-trend-up"></i>
                 </div>
                 <h3>You Earn Commission</h3>
                 <p>Automatic cut from every campaign completion & withdrawal</p>
@@ -325,7 +326,7 @@
         <div class="revenue-highlight anim-slide-in">
             <div class="revenue-highlight-inner">
                 <div class="revenue-highlight-icon">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    <i class="fa-solid fa-bolt"></i>
                 </div>
                 <p><strong>Recurring revenue engine</strong> — you earn on every transaction that flows through your platform. More users = more campaigns = more commission. The system scales with your growth.</p>
             </div>
@@ -349,7 +350,7 @@
                 </div>
                 <p>Interact with a fully working instance. Test the worker flow, view campaigns, check wallet features.</p>
                 <a href="#" class="btn btn-primary" target="_blank" rel="noopener">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                    <i class="fa-brands fa-telegram"></i>
                     <span>Open Demo Bot</span>
                 </a>
             </div>
@@ -361,7 +362,7 @@
                 </div>
                 <div class="demo-screenshot">
                     <div class="demo-screenshot-placeholder">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+                        <i class="fa-solid fa-image"></i>
                         <span>Admin Panel Screenshot</span>
                     </div>
                 </div>
@@ -374,7 +375,7 @@
                 </div>
                 <div class="demo-screenshot">
                     <div class="demo-screenshot-placeholder demo-video">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                        <i class="fa-solid fa-circle-play"></i>
                         <span>Video Demo</span>
                     </div>
                 </div>
@@ -453,7 +454,7 @@
         <div class="license-grid">
             <div class="license-col license-allowed anim-slide-in">
                 <h3>
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    <i class="fa-solid fa-check"></i>
                     What you can do
                 </h3>
                 <ul>
@@ -466,7 +467,7 @@
             </div>
             <div class="license-col license-denied anim-slide-in" style="--delay: 0.1s">
                 <h3>
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                    <i class="fa-solid fa-xmark"></i>
                     Restrictions
                 </h3>
                 <ul>
@@ -531,31 +532,31 @@
                     <h4>Everything included:</h4>
                     <ul>
                         <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <i class="fa-solid fa-check"></i>
                             Complete source code
                         </li>
                         <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <i class="fa-solid fa-check"></i>
                             Telegram Bot + Admin Panel
                         </li>
                         <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <i class="fa-solid fa-check"></i>
                             Wallet & Commission System
                         </li>
                         <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <i class="fa-solid fa-check"></i>
                             Multi-role architecture
                         </li>
                         <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <i class="fa-solid fa-check"></i>
                             Campaign management
                         </li>
                         <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <i class="fa-solid fa-check"></i>
                             Analytics & logging
                         </li>
                         <li>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                            <i class="fa-solid fa-check"></i>
                             Unlimited project usage
                         </li>
                     </ul>
@@ -563,7 +564,7 @@
                 
                 <a href="https://wa.me/YOUR_NUMBER?text=I%20want%20to%20purchase%20the%20PTC%20Bot%20source%20code" class="btn btn-primary btn-glow btn-large" target="_blank" rel="noopener">
                     <span>Get Source Code Now</span>
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12m0 0l-4-4m4 4l-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <i class="fa-solid fa-arrow-right"></i>
                 </a>
                 
                 <p class="pricing-notice">Manual verification. Source code delivered after confirmed payment via WhatsApp.</p>
@@ -615,7 +616,7 @@
             <div class="faq-item anim-slide-in">
                 <button class="faq-question" onclick="toggleFaq(this)">
                     <span>Can I resell the source code?</span>
-                    <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    <i class="fa-solid fa-chevron-down faq-chevron"></i>
                 </button>
                 <div class="faq-answer">
                     <p>No. The license grants you unlimited usage for your own projects and client work, but reselling the source code itself is not permitted.</p>
@@ -625,7 +626,7 @@
             <div class="faq-item anim-slide-in" style="--delay: 0.05s">
                 <button class="faq-question" onclick="toggleFaq(this)">
                     <span>Can I modify the code?</span>
-                    <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    <i class="fa-solid fa-chevron-down faq-chevron"></i>
                 </button>
                 <div class="faq-answer">
                     <p>Absolutely. You get complete source code with full modification rights. Rebrand it, customize it, extend it — it's yours to shape however you want.</p>
@@ -635,7 +636,7 @@
             <div class="faq-item anim-slide-in" style="--delay: 0.1s">
                 <button class="faq-question" onclick="toggleFaq(this)">
                     <span>Is support included?</span>
-                    <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    <i class="fa-solid fa-chevron-down faq-chevron"></i>
                 </button>
                 <div class="faq-answer">
                     <p>Basic setup guidance is included. The code is well-documented and structured for PHP developers. This is a source code purchase, not a SaaS subscription — you're expected to have PHP knowledge.</p>
@@ -645,7 +646,7 @@
             <div class="faq-item anim-slide-in" style="--delay: 0.15s">
                 <button class="faq-question" onclick="toggleFaq(this)">
                     <span>What hosting do I need?</span>
-                    <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    <i class="fa-solid fa-chevron-down faq-chevron"></i>
                 </button>
                 <div class="faq-answer">
                     <p>Any PHP hosting with MySQL/MariaDB and SSL support. Works on shared hosting ($5/month), VPS, or dedicated servers. No special requirements — if it runs PHP, it runs this bot.</p>
@@ -655,7 +656,7 @@
             <div class="faq-item anim-slide-in" style="--delay: 0.2s">
                 <button class="faq-question" onclick="toggleFaq(this)">
                     <span>Is this a scam script?</span>
-                    <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    <i class="fa-solid fa-chevron-down faq-chevron"></i>
                 </button>
                 <div class="faq-answer">
                     <p>No. This is a legitimate PTC (Paid-To-Click) platform — a well-established advertising model. Clients pay for real ad views, workers earn for completing tasks. The business model is transparent and ethical.</p>
@@ -665,7 +666,7 @@
             <div class="faq-item anim-slide-in" style="--delay: 0.25s">
                 <button class="faq-question" onclick="toggleFaq(this)">
                     <span>How does delivery work?</span>
-                    <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    <i class="fa-solid fa-chevron-down faq-chevron"></i>
                 </button>
                 <div class="faq-answer">
                     <p>After confirmed payment via WhatsApp, the complete source code package is delivered to you directly. Manual verification ensures security for both parties. Typical delivery is within a few hours.</p>
