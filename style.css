@@ -590,7 +590,7 @@ img {
 }
 
 .solution-steps {
-    max-width: 680px;
+    /* max-width: 680px; */
     display: flex;
     flex-direction: column;
     gap: 0;
@@ -1354,7 +1354,7 @@ img {
 }
 
 .faq-list {
-    max-width: 720px;
+    /* max-width: 720px; */
     display: flex;
     flex-direction: column;
     gap: 8px;

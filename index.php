@@ -49,7 +49,7 @@
     <div class="container hero-content">
         <div class="hero-badge anim-fade-up">
             <span class="badge-pulse"></span>
-            <span class="badge-text">Limited Release — Only <strong>5 Copies</strong> Available</span>
+            <span class="badge-text">Limited Release - Only <strong>5 Copies</strong> Available</span>
         </div>
         
         <h1 class="hero-title anim-fade-up anim-delay-1">
@@ -97,27 +97,28 @@
                 <div class="terminal-dots">
                     <span></span><span></span><span></span>
                 </div>
-                <span class="terminal-title">bot-deployment.sh</span>
+                <span class="terminal-title">deployment.sh</span>
             </div>
             <div class="terminal-body">
                 <div class="terminal-line" data-delay="0">
                     <span class="t-prompt">$</span>
-                    <span class="t-cmd typing" data-text="git clone your-ptc-bot.git && cd ptc-bot"></span>
+                    <span class="t-cmd typing" data-text="cd ptc-bot"></span>
                 </div>
                 <div class="terminal-line" data-delay="2000">
                     <span class="t-prompt">$</span>
-                    <span class="t-cmd typing" data-text="php setup.php --configure"></span>
+                    <span class="t-cmd typing" data-text="nano config/config.php"></span>
                 </div>
-                <div class="terminal-line" data-delay="3500">
+                <div class="terminal-line" data-delay="4500">
+                    <span class="t-output">&#10003; Webhook configured</span>
+                </div>
+                <div class="terminal-line" data-delay="4000">
+                    <span class="t-prompt">$</span>
+                    <span class="t-cmd typing" data-text="nano config/db-config.php"></span>
+                </div>
+                <div class="terminal-line" data-delay="5200">
                     <span class="t-output">&#10003; Database configured</span>
                 </div>
-                <div class="terminal-line" data-delay="4200">
-                    <span class="t-output">&#10003; Webhook registered</span>
-                </div>
-                <div class="terminal-line" data-delay="4900">
-                    <span class="t-output">&#10003; Admin panel ready</span>
-                </div>
-                <div class="terminal-line" data-delay="5600">
+                <div class="terminal-line" data-delay="6900">
                     <span class="t-output t-success">&#9889; Bot is live. Start earning.</span>
                 </div>
             </div>
@@ -146,21 +147,21 @@
                     <i class="fa-solid fa-layer-group"></i>
                 </div>
                 <h3>Complex Wallet Logic</h3>
-                <p>Deposit tracking, withdrawal processing, balance management, commission calculations — one bug and your users lose trust.</p>
+                <p>Deposit tracking, withdrawal processing, balance management, commission calculations. one bug and your users lose trust.</p>
             </div>
             <div class="problem-card anim-slide-in" style="--delay: 0.2s">
                 <div class="problem-icon">
                     <i class="fa-solid fa-users"></i>
                 </div>
                 <h3>Role Management Hell</h3>
-                <p>Admin, Client, Worker — each with different permissions, dashboards, and flows. The architectural complexity alone kills most projects.</p>
+                <p>Admin, Client, Worker. Each with different permissions, dashboards, and flows. The architectural complexity alone kills most projects.</p>
             </div>
             <div class="problem-card anim-slide-in" style="--delay: 0.3s">
                 <div class="problem-icon">
                     <i class="fa-solid fa-dollar-sign"></i>
                 </div>
                 <h3>Monetization Guesswork</h3>
-                <p>Commission models, fee structures, payment flows — figuring out the right revenue architecture takes expensive trial and error.</p>
+                <p>Commission models, fee structures, payment flows. Figuring out the right revenue architecture takes expensive trial and error.</p>
             </div>
         </div>
     </div>
@@ -328,7 +329,7 @@
                 <div class="revenue-highlight-icon">
                     <i class="fa-solid fa-bolt"></i>
                 </div>
-                <p><strong>Recurring revenue engine</strong> — you earn on every transaction that flows through your platform. More users = more campaigns = more commission. The system scales with your growth.</p>
+                <p><strong>Recurring revenue engine</strong> - you earn on every transaction that flows through your platform. More users = more campaigns = more commission. The system scales with your growth.</p>
             </div>
         </div>
     </div>
