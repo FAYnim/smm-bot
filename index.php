@@ -6,7 +6,6 @@
     <title>Telegram PTC Bot – Production Ready Source Code</title>
     <meta name="description" content="Launch your own PTC earning platform with a production-ready Telegram bot. Built-in wallet, commission system, multi-role architecture. Limited to 5 copies.">
     
-    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -15,13 +14,10 @@
 </head>
 <body>
 
-<!-- Noise overlay -->
 <div class="noise-overlay"></div>
 
-<!-- Grid background -->
 <div class="grid-bg"></div>
 
-<!-- Navigation -->
 <nav class="nav" id="nav">
     <div class="nav-inner">
         <a href="#" class="nav-logo">
@@ -38,9 +34,6 @@
     </div>
 </nav>
 
-<!-- ═══════════════════════════════════════ -->
-<!-- SECTION 1: HERO -->
-<!-- ═══════════════════════════════════════ -->
 <section class="hero" id="hero">
     <div class="hero-grid-lines"></div>
     <div class="hero-glow"></div>
@@ -91,7 +84,6 @@
     </div>
     
     <div class="container">
-        <!-- Terminal preview -->
         <div class="hero-terminal anim-fade-up anim-delay-5">
             <div class="terminal-chrome">
                 <div class="terminal-dots">
@@ -125,9 +117,6 @@
     </div>
 </section>
 
-<!-- ═══════════════════════════════════════ -->
-<!-- SECTION 2: PROBLEM -->
-<!-- ═══════════════════════════════════════ -->
 <section class="section section-problem" id="problem">
     <div class="container">
         <div class="section-label anim-slide-in">The Problem</div>
@@ -169,9 +158,6 @@
     </div>
 </section>
 
-<!-- ═══════════════════════════════════════ -->
-<!-- SECTION 3: SOLUTION -->
-<!-- ═══════════════════════════════════════ -->
 <section class="section section-solution" id="solution">
     <div class="container">
         <div class="section-label anim-slide-in">The Solution</div>
@@ -208,9 +194,6 @@
     </div>
 </section>
 
-<!-- ═══════════════════════════════════════ -->
-<!-- SECTION 4: FEATURES -->
-<!-- ═══════════════════════════════════════ -->
 <section class="section section-features" id="features">
     <div class="container">
         <div class="section-label anim-slide-in">Features</div>
@@ -287,9 +270,6 @@
     </div>
 </section>
 
-<!-- ═══════════════════════════════════════ -->
-<!-- SECTION 5: HOW YOU MAKE MONEY -->
-<!-- ═══════════════════════════════════════ -->
 <section class="section section-revenue" id="revenue">
     <div class="container">
         <div class="section-label anim-slide-in">Revenue Model</div>
@@ -346,9 +326,6 @@
     </div>
 </section>
 
-<!-- ═══════════════════════════════════════ -->
-<!-- SECTION 6: DEMO -->
-<!-- ═══════════════════════════════════════ -->
 <section class="section section-demo" id="demo">
     <div class="container">
         <div class="section-label anim-slide-in">See It Working</div>
@@ -399,9 +376,6 @@
     </div>
 </section>
 
-<!-- ═══════════════════════════════════════ -->
-<!-- SECTION 7: TECH STACK -->
-<!-- ═══════════════════════════════════════ -->
 <section class="section section-stack" id="stack">
     <div class="container">
         <div class="section-label anim-slide-in">Tech Stack</div>
@@ -461,9 +435,6 @@
     </div>
 </section>
 
-<!-- ═══════════════════════════════════════ -->
-<!-- SECTION 8: LICENSE -->
-<!-- ═══════════════════════════════════════ -->
 <section class="section section-license" id="license">
     <div class="container">
         <div class="section-label anim-slide-in">License</div>
@@ -505,9 +476,6 @@
     </div>
 </section>
 
-<!-- ═══════════════════════════════════════ -->
-<!-- SECTION 9: PRICING -->
-<!-- ═══════════════════════════════════════ -->
 <section class="section section-pricing" id="pricing">
     <div class="pricing-glow"></div>
     <div class="container">
@@ -628,9 +596,6 @@
     </div>
 </section>
 
-<!-- ═══════════════════════════════════════ -->
-<!-- SECTION 10: FAQ -->
-<!-- ═══════════════════════════════════════ -->
 <section class="section section-faq" id="faq">
     <div class="container">
         <div class="section-label anim-slide-in">FAQ</div>
@@ -703,9 +668,6 @@
     </div>
 </section>
 
-<!-- ═══════════════════════════════════════ -->
-<!-- FOOTER -->
-<!-- ═══════════════════════════════════════ -->
 <footer class="footer">
     <div class="container">
         <div class="footer-inner">

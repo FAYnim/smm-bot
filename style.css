@@ -1,8 +1,5 @@
-/* ═══════════════════════════════════════
-   VARIABLES & RESET
-   ═══════════════════════════════════════ */
+/* Base */
 :root {
-    /* Colors */
     --bg-deep: #06060b;
     --bg-base: #0a0a10;
     --bg-surface: #111118;
@@ -27,17 +24,14 @@
     --border-light: #ffffff12;
     --border-accent: #00e5ff18;
     
-    /* Typography */
     --font-display: 'Outfit', sans-serif;
     --font-body: 'DM Sans', sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
     
-    /* Spacing */
     --section-pad: clamp(80px, 12vw, 160px);
     --container-max: 1200px;
     --container-pad: clamp(20px, 4vw, 48px);
     
-    /* Transitions */
     --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
     --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
 }
@@ -63,7 +57,7 @@ body {
     position: relative;
 }
 
-/* Noise overlay */
+/* Background Elements */
 .noise-overlay {
     position: fixed;
     inset: 0;
@@ -75,7 +69,6 @@ body {
     background-size: 256px 256px;
 }
 
-/* Grid background */
 .grid-bg {
     position: fixed;
     inset: 0;
@@ -86,9 +79,10 @@ body {
         linear-gradient(90deg, var(--border-subtle) 1px, transparent 1px);
     background-size: 60px 60px;
     mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, rgba(0,0,0,0.4) 0%, transparent 70%);
-    -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, rgba(0,0,0,0.4) 0%, transparent 70%);
+    -webkit-mask-image: radial-gradient(ellipse 80% 66% at 50% 30%, rgba(0,0,0,0.4) 0%, transparent 70%);
 }
 
+/* Layout */
 .container {
     max-width: var(--container-max);
     margin: 0 auto;
@@ -107,9 +101,7 @@ img {
     display: block;
 }
 
-/* ═══════════════════════════════════════
-   TYPOGRAPHY
-   ═══════════════════════════════════════ */
+/* Typography */
 .text-accent { color: var(--accent-cyan); }
 .text-amber { color: var(--accent-amber); }
 .text-danger { color: var(--accent-danger); }
@@ -150,9 +142,7 @@ img {
     z-index: 1;
 }
 
-/* ═══════════════════════════════════════
-   BUTTONS
-   ═══════════════════════════════════════ */
+/* Buttons */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -217,9 +207,7 @@ img {
     justify-content: center;
 }
 
-/* ═══════════════════════════════════════
-   NAVIGATION
-   ═══════════════════════════════════════ */
+/* Navigation */
 .nav {
     position: fixed;
     top: 0;
@@ -291,9 +279,7 @@ img {
     transform: translateY(-1px);
 }
 
-/* ═══════════════════════════════════════
-   HERO
-   ═══════════════════════════════════════ */
+/* Hero Section */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -442,7 +428,7 @@ img {
     background: var(--border-light);
 }
 
-/* Terminal */
+/* Terminal Component */
 .hero-terminal {
     width: 100%;
     max-width: 640px;
@@ -540,9 +526,7 @@ img {
     50% { opacity: 0; }
 }
 
-/* ═══════════════════════════════════════
-   PROBLEM SECTION
-   ═══════════════════════════════════════ */
+/* Problem Section */
 .section-problem {
     background: var(--bg-base);
 }
@@ -587,9 +571,7 @@ img {
     line-height: 1.65;
 }
 
-/* ═══════════════════════════════════════
-   SOLUTION SECTION
-   ═══════════════════════════════════════ */
+/* Solution Section */
 .section-solution {
     background: var(--bg-deep);
 }
@@ -649,9 +631,7 @@ img {
     margin-left: 56px;
 }
 
-/* ═══════════════════════════════════════
-   FEATURES SECTION
-   ═══════════════════════════════════════ */
+/* Features Section */
 .section-features {
     background: var(--bg-base);
 }
@@ -719,9 +699,7 @@ img {
     line-height: 1.6;
 }
 
-/* ═══════════════════════════════════════
-   REVENUE SECTION
-   ═══════════════════════════════════════ */
+/* Revenue Section */
 .section-revenue {
     background: var(--bg-deep);
 }
@@ -826,9 +804,7 @@ img {
     color: var(--accent-amber);
 }
 
-/* ═══════════════════════════════════════
-   DEMO SECTION
-   ═══════════════════════════════════════ */
+/* Demo Section */
 .section-demo {
     background: var(--bg-base);
 }
@@ -928,9 +904,7 @@ img {
     color: var(--accent-cyan);
 }
 
-/* ═══════════════════════════════════════
-   TECH STACK SECTION
-   ═══════════════════════════════════════ */
+/* Tech Stack Section */
 .section-stack {
     background: var(--bg-deep);
 }
@@ -997,9 +971,7 @@ img {
     color: var(--accent-cyan);
 }
 
-/* ═══════════════════════════════════════
-   LICENSE SECTION
-   ═══════════════════════════════════════ */
+/* License Section */
 .section-license {
     background: var(--bg-base);
 }
@@ -1067,9 +1039,7 @@ img {
     color: var(--text-tertiary);
 }
 
-/* ═══════════════════════════════════════
-   PRICING SECTION
-   ═══════════════════════════════════════ */
+/* Pricing Section */
 .section-pricing {
     background: var(--bg-deep);
     overflow: hidden;
@@ -1339,9 +1309,7 @@ img {
     font-weight: 600;
 }
 
-/* ═══════════════════════════════════════
-   FAQ SECTION
-   ═══════════════════════════════════════ */
+/* FAQ Section */
 .section-faq {
     background: var(--bg-base);
 }
@@ -1411,9 +1379,7 @@ img {
     line-height: 1.7;
 }
 
-/* ═══════════════════════════════════════
-   FOOTER
-   ═══════════════════════════════════════ */
+/* Footer */
 .footer {
     padding: 48px 0;
     background: var(--bg-deep);
@@ -1453,9 +1419,7 @@ img {
     color: var(--text-primary);
 }
 
-/* ═══════════════════════════════════════
-   ANIMATIONS
-   ═══════════════════════════════════════ */
+/* Animations */
 .anim-fade-up {
     opacity: 0;
     transform: translateY(28px);
@@ -1485,9 +1449,7 @@ img {
 .anim-delay-4 { transition-delay: 0.4s; }
 .anim-delay-5 { transition-delay: 0.5s; }
 
-/* ═══════════════════════════════════════
-   RESPONSIVE
-   ═══════════════════════════════════════ */
+/* Responsive */
 @media (max-width: 1024px) {
     .features-grid {
         grid-template-columns: repeat(2, 1fr);

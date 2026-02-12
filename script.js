@@ -1,8 +1,5 @@
-/* ═══════════════════════════════════════
-   SCROLL ANIMATIONS (Intersection Observer)
-   ═══════════════════════════════════════ */
+/* Scroll Animations */
 document.addEventListener('DOMContentLoaded', () => {
-    // Intersection Observer for scroll-reveal animations
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -40px 0px'
@@ -17,14 +14,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    // Observe all animatable elements
     document.querySelectorAll('.anim-fade-up, .anim-slide-in').forEach(el => {
         observer.observe(el);
     });
 
-    // ═══════════════════════════════════════
-    // NAVBAR SCROLL EFFECT
-    // ═══════════════════════════════════════
+    /* Navbar Scroll */
     const nav = document.getElementById('nav');
     let lastScrollY = 0;
 
@@ -40,9 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         lastScrollY = scrollY;
     }, { passive: true });
 
-    // ═══════════════════════════════════════
-    // TERMINAL TYPING ANIMATION
-    // ═══════════════════════════════════════
+    /* Terminal Animation */
     const terminalLines = document.querySelectorAll('.terminal-line');
     
     const terminalObserver = new IntersectionObserver((entries) => {
@@ -84,9 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // ═══════════════════════════════════════
-    // SMOOTH SCROLL for ANCHOR LINKS
-    // ═══════════════════════════════════════
+    /* Smooth Scroll */
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
@@ -95,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             const target = document.querySelector(href);
             if (target) {
-                const offset = 80; // nav height
+                const offset = 80;
                 const top = target.getBoundingClientRect().top + window.scrollY - offset;
                 window.scrollTo({ top, behavior: 'smooth' });
             }
@@ -103,15 +93,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-/* ═══════════════════════════════════════
-   FAQ TOGGLE
-   ═══════════════════════════════════════ */
+/* FAQ Toggle */
 function toggleFaq(button) {
     const faqItem = button.closest('.faq-item');
     const answer = faqItem.querySelector('.faq-answer');
     const isOpen = faqItem.classList.contains('open');
     
-    // Close all other FAQs
     document.querySelectorAll('.faq-item.open').forEach(item => {
         if (item !== faqItem) {
             item.classList.remove('open');
