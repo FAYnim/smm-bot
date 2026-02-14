@@ -1,3 +1,6 @@
+<?php
+include "config.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -583,7 +586,7 @@
                             </ul>
                         </div>
                         
-                        <a href="https://wa.me/YOUR_NUMBER?text=I%20want%20to%20purchase%20the%20PTC%20Bot%20source%20code" class="btn btn-primary btn-glow btn-large" target="_blank" rel="noopener">
+                        <a href="https://wa.me/<?php echo $whatsapp_number; ?>?text=Hello!%20I'm%20interested%20in%20the%20PTC%20Bot%20source%20code%20for%20sale.%20I%20saw%20the%20landing%20page%20and%20want%20to%20purchase.%20Is%20copy%20%231%20still%20available%20at%20%2445%3F%20Please%20provide%20more%20information." class="btn btn-primary btn-glow btn-large" target="_blank" rel="noopener">
                             <span>Get Source Code Now</span>
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -716,7 +719,7 @@
                             </ul>
                         </div>
                         
-                        <a href="https://wa.me/YOUR_NUMBER?text=I%27m%20interested%20in%20the%20Managed%20Partnership%20model" class="btn btn-primary btn-glow btn-large" target="_blank" rel="noopener">
+                        <a href="https://wa.me/<?php echo $whatsapp_number; ?>?text=Hello!%20I'm%20interested%20in%20the%20Managed%20Partnership%20for%20the%20PTC%20Bot%20platform.%20I'd%20like%20to%20know%20more%20details%20about%20the%20revenue%20sharing%20options%20and%20how%20the%20partnership%20system%20works.%20Can%20you%20explain%20further%3F" class="btn btn-primary btn-glow btn-large" target="_blank" rel="noopener">
                             <span>Start Partnership</span>
                             <i class="fa-solid fa-handshake"></i>
                         </a>
