@@ -9,20 +9,22 @@ This landing page is designed to showcase and sell Telegram bot source code with
 - Commission engine
 - Multi-role architecture
 
+## Preview
+
+![OG Image Preview](assets/og-image.png)
+
+*Social sharing preview image (Open Graph)*
+
 ## Project Structure
 
 ```
 smm-bot-landing-page/
-├── index.php      # Main landing page (HTML/PHP)
-├── style.css       # Modern dark theme styling
-├── script.js       # Scroll animations & terminal effects
-├── .gitignore      # Git ignore rules
-└── README.md       # This file
 ```
 
 ## Technology Stack
 
 - **Frontend**: HTML5, CSS3, JavaScript
+- **Backend**: PHP (for configuration management)
 - **Fonts**: Outfit, DM Sans, JetBrains Mono (Google Fonts)
 - **Design**: Modern dark theme with cyan/amber accents
 - **Effects**: Scroll-triggered animations, terminal typing animation
@@ -35,14 +37,40 @@ smm-bot-landing-page/
 - Scroll-reveal animations
 - Grid background with noise overlay
 - Multi-section layout (Hero, Features, Revenue, Stack, Pricing, FAQ)
+- Dynamic WhatsApp integration via config
+- Complete SEO optimization (Open Graph, Twitter Cards, JSON-LD)
 
 ## Quick Start
 
-1. Open `index.php` in a web browser
-2. Customize content as needed
-3. Deploy to your web server
+1. Copy `config-example.php` to `config.php`
+2. Edit `config.php` and set your WhatsApp number:
+   ```php
+   <?php
+   $whatsapp_number = 62123456789; // Your WhatsApp number (without +)
+   ?>
+   ```
+3. Open `index.php` in a web browser or deploy to your web server
 
-## Customization
+## Configuration
+
+### WhatsApp Integration
+
+The landing page uses a configuration file for dynamic WhatsApp integration:
+
+1. `config-example.php` - Template file (committed to git)
+2. `config.php` - Your actual configuration (ignored by git)
+
+This keeps your WhatsApp number private while allowing easy deployment.
+
+### SEO Settings
+
+The landing page includes comprehensive SEO optimization:
+
+- **Meta Tags**: Title, description, keywords, author, robots
+- **Open Graph**: Facebook/LinkedIn sharing with custom image
+- **Twitter Cards**: Large image summary card
+- **JSON-LD**: Structured data for search engines (Schema.org)
+- **Canonical URL**: Prevents duplicate content issues
 
 ### Colors
 Edit CSS variables in `style.css`:
