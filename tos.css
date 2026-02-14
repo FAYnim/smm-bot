@@ -1,0 +1,317 @@
+/* ToS Page Specific Styles */
+.tos-page {
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+.tos-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.tos-header-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: var(--accent-cyan-dim);
+    border: 1px solid var(--accent-cyan);
+    border-radius: 100px;
+    font-size: 0.85rem;
+    color: var(--accent-cyan);
+    margin-bottom: 24px;
+}
+
+.tos-header h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+    letter-spacing: -0.02em;
+}
+
+.tos-header h1 span {
+    color: var(--accent-cyan);
+}
+
+.tos-updated {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.tos-updated strong {
+    color: var(--text-primary);
+}
+
+.tos-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tos-section {
+    margin-bottom: 48px;
+    padding: 32px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.tos-section:hover {
+    border-color: var(--border-light);
+}
+
+.tos-section-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: var(--accent-cyan-dim);
+    color: var(--accent-cyan);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-right: 12px;
+}
+
+.tos-section h2 {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 20px;
+}
+
+.tos-section p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.tos-section p:last-child {
+    margin-bottom: 0;
+}
+
+.tos-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0;
+}
+
+.tos-section ul li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 12px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.tos-section ul li:last-child {
+    margin-bottom: 0;
+}
+
+.tos-section ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 6px;
+    height: 6px;
+    background: var(--accent-cyan);
+    border-radius: 50%;
+}
+
+.tos-section ul li i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: var(--accent-success);
+    font-size: 0.9rem;
+}
+
+.tos-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.95rem;
+}
+
+.tos-table th,
+.tos-table td {
+    padding: 14px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.tos-table th {
+    background: var(--bg-elevated);
+    color: var(--text-primary);
+    font-weight: 600;
+    font-family: var(--font-display);
+}
+
+.tos-table th:first-child {
+    border-radius: 8px 0 0 0;
+}
+
+.tos-table th:last-child {
+    border-radius: 0 8px 0 0;
+}
+
+.tos-table td {
+    color: var(--text-secondary);
+}
+
+.tos-table tr:last-child td:first-child {
+    border-radius: 0 0 0 8px;
+}
+
+.tos-table tr:last-child td:last-child {
+    border-radius: 0 0 8px 0;
+}
+
+.tos-table tr:hover td {
+    background: var(--bg-elevated);
+}
+
+.tos-table .highlight {
+    color: var(--accent-cyan);
+    font-weight: 600;
+}
+
+.tos-table .highlight-amber {
+    color: var(--accent-amber);
+    font-weight: 600;
+}
+
+.tos-note {
+    background: var(--accent-amber-dim);
+    border-left: 3px solid var(--accent-amber);
+    padding: 16px 20px;
+    margin: 20px 0;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.tos-note strong {
+    color: var(--accent-amber);
+}
+
+.tos-formula {
+    background: var(--bg-elevated);
+    padding: 16px 20px;
+    border-radius: 8px;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--accent-cyan);
+    margin: 12px 0;
+    display: inline-block;
+}
+
+.tos-contact {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-light);
+    border-radius: 16px;
+    padding: 32px;
+    text-align: center;
+    margin-top: 48px;
+}
+
+.tos-contact h3 {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+}
+
+.tos-contact p {
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+}
+
+.tos-contact a {
+    color: var(--accent-cyan);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.tos-contact a:hover {
+    text-decoration: underline;
+}
+
+.tos-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-light);
+    border-radius: 100px;
+    color: var(--text-primary);
+    font-weight: 500;
+    margin-bottom: 32px;
+    transition: all 0.3s ease;
+}
+
+.tos-back:hover {
+    background: var(--bg-elevated);
+    border-color: var(--accent-cyan);
+    color: var(--accent-cyan);
+}
+
+.tos-back i {
+    font-size: 0.9rem;
+}
+
+/* Responsive Tables */
+@media (max-width: 768px) {
+    .tos-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    .tos-section {
+        padding: 24px 20px;
+    }
+    
+    .tos-section h2 {
+        font-size: 1.15rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+    
+    .nav, .noise-overlay, .grid-bg, .footer, .tos-back {
+        display: none !important;
+    }
+    
+    .tos-page {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .tos-section {
+        break-inside: avoid;
+        border: 1px solid #ccc;
+        background: white;
+    }
+    
+    .tos-table th,
+    .tos-table td {
+        border: 1px solid #ccc;
+    }
+}

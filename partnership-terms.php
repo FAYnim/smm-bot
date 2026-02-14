@@ -21,325 +21,7 @@ include "config.php";
     <link rel="shortcut icon" href="favicon/favicon.ico">
     
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* ToS Page Specific Styles */
-        .tos-page {
-            min-height: 100vh;
-            padding-top: 100px;
-            padding-bottom: 80px;
-        }
-        
-        .tos-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-        
-        .tos-header-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 16px;
-            background: var(--accent-cyan-dim);
-            border: 1px solid var(--accent-cyan);
-            border-radius: 100px;
-            font-size: 0.85rem;
-            color: var(--accent-cyan);
-            margin-bottom: 24px;
-        }
-        
-        .tos-header h1 {
-            font-family: var(--font-display);
-            font-size: clamp(2rem, 5vw, 3rem);
-            font-weight: 800;
-            color: var(--text-primary);
-            margin-bottom: 12px;
-            letter-spacing: -0.02em;
-        }
-        
-        .tos-header h1 span {
-            color: var(--accent-cyan);
-        }
-        
-        .tos-updated {
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-        }
-        
-        .tos-updated strong {
-            color: var(--text-primary);
-        }
-        
-        .tos-content {
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        
-        .tos-section {
-            margin-bottom: 48px;
-            padding: 32px;
-            background: var(--bg-surface);
-            border: 1px solid var(--border-subtle);
-            border-radius: 16px;
-            transition: border-color 0.3s ease;
-        }
-        
-        .tos-section:hover {
-            border-color: var(--border-light);
-        }
-        
-        .tos-section-number {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 32px;
-            height: 32px;
-            background: var(--accent-cyan-dim);
-            color: var(--accent-cyan);
-            font-family: var(--font-mono);
-            font-size: 0.85rem;
-            font-weight: 600;
-            border-radius: 8px;
-            margin-right: 12px;
-        }
-        
-        .tos-section h2 {
-            display: flex;
-            align-items: center;
-            font-family: var(--font-display);
-            font-size: 1.35rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 20px;
-        }
-        
-        .tos-section p {
-            color: var(--text-secondary);
-            line-height: 1.8;
-            margin-bottom: 16px;
-        }
-        
-        .tos-section p:last-child {
-            margin-bottom: 0;
-        }
-        
-        .tos-section ul {
-            list-style: none;
-            padding: 0;
-            margin: 16px 0;
-        }
-        
-        .tos-section ul li {
-            position: relative;
-            padding-left: 28px;
-            margin-bottom: 12px;
-            color: var(--text-secondary);
-            line-height: 1.6;
-        }
-        
-        .tos-section ul li:last-child {
-            margin-bottom: 0;
-        }
-        
-        .tos-section ul li::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 8px;
-            width: 6px;
-            height: 6px;
-            background: var(--accent-cyan);
-            border-radius: 50%;
-        }
-        
-        .tos-section ul li i {
-            position: absolute;
-            left: 0;
-            top: 4px;
-            color: var(--accent-success);
-            font-size: 0.9rem;
-        }
-        
-        .tos-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-            font-size: 0.95rem;
-        }
-        
-        .tos-table th,
-        .tos-table td {
-            padding: 14px 16px;
-            text-align: left;
-            border-bottom: 1px solid var(--border-subtle);
-        }
-        
-        .tos-table th {
-            background: var(--bg-elevated);
-            color: var(--text-primary);
-            font-weight: 600;
-            font-family: var(--font-display);
-        }
-        
-        .tos-table th:first-child {
-            border-radius: 8px 0 0 0;
-        }
-        
-        .tos-table th:last-child {
-            border-radius: 0 8px 0 0;
-        }
-        
-        .tos-table td {
-            color: var(--text-secondary);
-        }
-        
-        .tos-table tr:last-child td:first-child {
-            border-radius: 0 0 0 8px;
-        }
-        
-        .tos-table tr:last-child td:last-child {
-            border-radius: 0 0 8px 0;
-        }
-        
-        .tos-table tr:hover td {
-            background: var(--bg-elevated);
-        }
-        
-        .tos-table .highlight {
-            color: var(--accent-cyan);
-            font-weight: 600;
-        }
-        
-        .tos-table .highlight-amber {
-            color: var(--accent-amber);
-            font-weight: 600;
-        }
-        
-        .tos-note {
-            background: var(--accent-amber-dim);
-            border-left: 3px solid var(--accent-amber);
-            padding: 16px 20px;
-            margin: 20px 0;
-            border-radius: 0 8px 8px 0;
-            font-size: 0.9rem;
-            color: var(--text-secondary);
-        }
-        
-        .tos-note strong {
-            color: var(--accent-amber);
-        }
-        
-        .tos-formula {
-            background: var(--bg-elevated);
-            padding: 16px 20px;
-            border-radius: 8px;
-            font-family: var(--font-mono);
-            font-size: 0.9rem;
-            color: var(--accent-cyan);
-            margin: 12px 0;
-            display: inline-block;
-        }
-        
-        .tos-contact {
-            background: linear-gradient(135deg, var(--accent-cyan-dim), var(--accent-amber-dim));
-            border: 1px solid var(--border-light);
-            border-radius: 16px;
-            padding: 32px;
-            text-align: center;
-            margin-top: 48px;
-        }
-        
-        .tos-contact h3 {
-            font-family: var(--font-display);
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: var(--text-primary);
-            margin-bottom: 16px;
-        }
-        
-        .tos-contact p {
-            color: var(--text-secondary);
-            margin-bottom: 8px;
-        }
-        
-        .tos-contact a {
-            color: var(--accent-cyan);
-            text-decoration: none;
-            font-weight: 500;
-        }
-        
-        .tos-contact a:hover {
-            text-decoration: underline;
-        }
-        
-        .tos-back {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 12px 24px;
-            background: var(--bg-surface);
-            border: 1px solid var(--border-light);
-            border-radius: 100px;
-            color: var(--text-primary);
-            font-weight: 500;
-            margin-bottom: 32px;
-            transition: all 0.3s ease;
-        }
-        
-        .tos-back:hover {
-            background: var(--bg-elevated);
-            border-color: var(--accent-cyan);
-            color: var(--accent-cyan);
-        }
-        
-        .tos-back i {
-            font-size: 0.9rem;
-        }
-        
-        /* Responsive Tables */
-        @media (max-width: 768px) {
-            .tos-table {
-                display: block;
-                overflow-x: auto;
-                white-space: nowrap;
-            }
-            
-            .tos-section {
-                padding: 24px 20px;
-            }
-            
-            .tos-section h2 {
-                font-size: 1.15rem;
-            }
-        }
-        
-        /* Print Styles */
-        @media print {
-            body {
-                background: white;
-                color: black;
-            }
-            
-            .nav, .noise-overlay, .grid-bg, .footer, .tos-back {
-                display: none !important;
-            }
-            
-            .tos-page {
-                padding-top: 20px;
-                padding-bottom: 20px;
-            }
-            
-            .tos-section {
-                break-inside: avoid;
-                border: 1px solid #ccc;
-                background: white;
-            }
-            
-            .tos-table th,
-            .tos-table td {
-                border: 1px solid #ccc;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="tos.css">
 </head>
 <body>
 
@@ -374,56 +56,52 @@ include "config.php";
                 <span>Legal Document</span>
             </div>
             <h1>MANAGED <span>PARTNERSHIP</span> AGREEMENT</h1>
-            <p class="tos-updated">Telegram PTC Bot Platform &mdash; <strong>Terakhir diperbarui:</strong> 14 Februari 2026</p>
+            <p class="tos-updated">Telegram PTC Bot Platform &mdash; <strong>Last updated:</strong> February 14, 2026</p>
         </header>
         
         <div class="tos-content">
-            <!-- Section 1: DEFINISI -->
             <section class="tos-section">
                 <h2>
                     <span class="tos-section-number">1</span>
-                    DEFINISI
+                    DEFINITIONS
                 </h2>
                 <ul>
-                    <li><strong>"Platform"</strong>: Sistem Telegram PTC Bot yang dikelola oleh Developer</li>
-                    <li><strong>"Developer"</strong>: FayDev, pengelola teknis platform</li>
-                    <li><strong>"Investor"</strong>: Pihak yang menyediakan modal dan menerima revenue share</li>
-                    <li><strong>"Net Revenue"</strong>: Total pendapatan gross dikurangi biaya operasional yang disetujui</li>
+                    <li><strong>"Platform"</strong>: Telegram PTC Bot system managed by the Developer</li>
+                    <li><strong>"Developer"</strong>: FayDev, the technical manager of the platform</li>
+                    <li><strong>"Investor"</strong>: Party providing capital and receiving revenue share</li>
+                    <li><strong>"Net Revenue"</strong>: Total gross revenue minus approved operational costs</li>
                 </ul>
             </section>
             
-            <!-- Section 2: SCOPE OF WORK -->
             <section class="tos-section">
                 <h2>
                     <span class="tos-section-number">2</span>
                     SCOPE OF WORK (DEVELOPER)
                 </h2>
-                <p>Developer bertanggung jawab penuh atas:</p>
+                <p>The Developer is fully responsible for:</p>
                 <ul>
-                    <li><i class="fa-solid fa-check"></i> Server hosting dan domain</li>
-                    <li><i class="fa-solid fa-check"></i> Maintenance dan monitoring 24/7</li>
-                    <li><i class="fa-solid fa-check"></i> Update fitur dan security patches</li>
+                    <li><i class="fa-solid fa-check"></i> Server hosting and domain</li>
+                    <li><i class="fa-solid fa-check"></i> Maintenance and monitoring 24/7</li>
+                    <li><i class="fa-solid fa-check"></i> Feature updates and security patches</li>
                     <li><i class="fa-solid fa-check"></i> Bug fixes</li>
-                    <li><i class="fa-solid fa-check"></i> Support user (via admin yang ditunjuk)</li>
-                    <li><i class="fa-solid fa-check"></i> Backup dan disaster recovery</li>
+                    <li><i class="fa-solid fa-check"></i> User support (via designated admin)</li>
+                    <li><i class="fa-solid fa-check"></i> Backup and disaster recovery</li>
                 </ul>
-                <p><strong>Backup support:</strong> Developer dapat melibatkan admin tambahan jika diperlukan tanpa biaya ekstra untuk Investor.</p>
+                <p><strong>Backup support:</strong> Developer may involve additional admins if needed at no extra cost to the Investor.</p>
             </section>
             
-            <!-- Section 3: KEWAJIBAN INVESTOR -->
             <section class="tos-section">
                 <h2>
                     <span class="tos-section-number">3</span>
-                    KEWAJIBAN INVESTOR
+                    INVESTOR OBLIGATIONS
                 </h2>
-                <p>Investor hanya bertanggung jawab atas:</p>
+                <p>The Investor is only responsible for:</p>
                 <ul>
-                    <li>Modal awal (jika memilih Hybrid Model: $100 setup fee)</li>
-                    <li>Ketersediaan akun untuk menerima pembayaran revenue share</li>
+                    <li>Initial capital (if choosing Hybrid Model: $100 setup fee)</li>
+                    <li>Availability of account to receive revenue share payments</li>
                 </ul>
             </section>
             
-            <!-- Section 4: REVENUE SHARING MODELS -->
             <section class="tos-section">
                 <h2>
                     <span class="tos-section-number">4</span>
@@ -455,205 +133,194 @@ include "config.php";
                 </table>
             </section>
             
-            <!-- Section 5: PERHITUNGAN NET REVENUE -->
             <section class="tos-section">
                 <h2>
                     <span class="tos-section-number">5</span>
-                    PERHITUNGAN NET REVENUE
+                    NET REVENUE CALCULATION
                 </h2>
-                <p><strong>Gross Revenue</strong> = Total seluruh pendapatan platform (deposit client, fees, dll)</p>
+                <p><strong>Gross Revenue</strong> = Total all platform revenue (client deposits, fees, etc.)</p>
                 
-                <p><strong>Biaya Operasional</strong> (dikurangi dari Gross):</p>
+                <p><strong>Operational Costs</strong> (deducted from Gross):</p>
                 <ul>
-                    <li>Server hosting: ~Rp 100.000/bulan</li>
-                    <li>Domain renewal: ~Rp 3.000/bulan</li>
-                    <li><strong>Total fixed cost: Rp 103.000/bulan</strong></li>
+                    <li>Server hosting: ~Rp 100,000/month</li>
+                    <li>Domain renewal: ~Rp 3,000/month</li>
+                    <li><strong>Total fixed cost: Rp 103,000/month</strong></li>
                 </ul>
                 
-                <div class="tos-formula">Net Revenue = Gross Revenue &minus; Rp 103.000</div>
+                <div class="tos-formula">Net Revenue = Gross Revenue &minus; Rp 103,000</div>
                 
                 <div class="tos-note">
-                    <strong>Catatan:</strong> Tidak ada payment gateway fees karena menggunakan sistem manual transfer + verifikasi admin.
+                    <strong>Note:</strong> No payment gateway fees as the system uses manual transfer + admin verification.
                 </div>
             </section>
             
-            <!-- Section 6: PEMBAYARAN REVENUE SHARE -->
             <section class="tos-section">
                 <h2>
                     <span class="tos-section-number">6</span>
-                    PEMBAYARAN REVENUE SHARE
+                    REVENUE SHARE PAYMENT
                 </h2>
                 <table class="tos-table">
                     <thead>
                         <tr>
-                            <th>Aspek</th>
+                            <th>Aspect</th>
                             <th>Detail</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Frekuensi</strong></td>
-                            <td>Bulanan</td>
+                            <td><strong>Frequency</strong></td>
+                            <td>Monthly</td>
                         </tr>
                         <tr>
                             <td><strong>Minimum payout</strong></td>
-                            <td>Rp 250.000</td>
+                            <td>Rp 250,000</td>
                         </tr>
                         <tr>
-                            <td><strong>Akumulasi</strong></td>
-                            <td>Jika di bawah minimum, diakumulasi ke bulan berikutnya</td>
+                            <td><strong>Accumulation</strong></td>
+                            <td>If below minimum, accumulated to the following month</td>
                         </tr>
                         <tr>
                             <td><strong>Method (Indonesia)</strong></td>
-                            <td>Transfer bank atau E-wallet (DANA/OVO/GoPay)</td>
+                            <td>Bank transfer or E-wallet (DANA/OVO/GoPay)</td>
                         </tr>
                         <tr>
                             <td><strong>Method (International)</strong></td>
-                            <td>PayPal atau Crypto (USDT)</td>
+                            <td>PayPal or Crypto (USDT)</td>
                         </tr>
                     </tbody>
                 </table>
                 
-                <p><strong>Jadwal pembayaran:</strong> Dalam 7 hari kerja setelah laporan bulanan dikirim.</p>
+                <p><strong>Payment schedule:</strong> Within 7 business days after monthly report is sent.</p>
             </section>
             
-            <!-- Section 7: DURASI & TERMINATION -->
             <section class="tos-section">
                 <h2>
                     <span class="tos-section-number">7</span>
-                    DURASI & TERMINATION
+                    DURATION & TERMINATION
                 </h2>
                 <table class="tos-table">
                     <thead>
                         <tr>
-                            <th>Aspek</th>
+                            <th>Aspect</th>
                             <th>Detail</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td><strong>Minimum commitment</strong></td>
-                            <td>3 bulan</td>
+                            <td>3 months</td>
                         </tr>
                         <tr>
                             <td><strong>Notice period</strong></td>
-                            <td>14 hari tertulis (WhatsApp/email)</td>
+                            <td>14 days written notice (WhatsApp/email)</td>
                         </tr>
                         <tr>
                             <td><strong>Exit terms</strong></td>
-                            <td>Revenue yang belum dibayar tetap ikut minimum payout rules (tidak ada pembayaran langsung, tetap akumulasi jika di bawah Rp 250.000)</td>
+                            <td>Unpaid revenue still follows minimum payout rules (no direct payment, remains accumulated if below Rp 250,000)</td>
                         </tr>
                     </tbody>
                 </table>
                 
-                <p><strong>Early termination:</strong> Jika Investor berhenti sebelum 3 bulan, tidak ada penalty namun revenue yang terakumulasi tetap mengikuti minimum payout rules.</p>
+                <p><strong>Early termination:</strong> If Investor stops before 3 months, there is no penalty but accumulated revenue still follows minimum payout rules.</p>
             </section>
             
-            <!-- Section 8: LAPORAN & TRANSPARENSI -->
             <section class="tos-section">
                 <h2>
                     <span class="tos-section-number">8</span>
-                    LAPORAN & TRANSPARENSI
+                    REPORTS & TRANSPARENCY
                 </h2>
                 <p><strong>Format:</strong> Spreadsheet (Google Sheets/Excel)</p>
-                <p><strong>Dikirim via:</strong> Email atau WhatsApp</p>
+                <p><strong>Sent via:</strong> Email or WhatsApp</p>
                 
-                <p><strong>Isi laporan bulanan:</strong></p>
+                <p><strong>Monthly report contents:</strong></p>
                 <ul>
-                    <li>Gross Revenue (rincian sumber)</li>
-                    <li>Biaya operasional (breakdown)</li>
+                    <li>Gross Revenue (source breakdown)</li>
+                    <li>Operational costs (breakdown)</li>
                     <li>Net Revenue</li>
-                    <li>Investor share (80% atau 85%)</li>
-                    <li>Accumulated balance (jika ada)</li>
-                    <li>Status payout (dibayar/diakumulasi)</li>
+                    <li>Investor share (80% or 85%)</li>
+                    <li>Accumulated balance (if any)</li>
+                    <li>Payout status (paid/accumulated)</li>
                 </ul>
                 
-                <p><strong>Future improvement:</strong> Dashboard real-time (opsional, akan diinfokan jika tersedia).</p>
+                <p><strong>Future improvement:</strong> Real-time dashboard (optional, will be informed if available).</p>
             </section>
             
-            <!-- Section 9: SUPPORT & RESPONSE TIME -->
             <section class="tos-section">
                 <h2>
                     <span class="tos-section-number">9</span>
                     SUPPORT & RESPONSE TIME
                 </h2>
-                <p><strong>Scope support:</strong></p>
+                <p><strong>Support scope:</strong></p>
                 <ul>
-                    <li>Laporan keuangan</li>
-                    <li>Status teknis platform</li>
-                    <li>Request fitur baru (dengan kesepakatan development terpisah)</li>
+                    <li>Financial reports</li>
+                    <li>Platform technical status</li>
+                    <li>New feature requests (with separate development agreement)</li>
                 </ul>
                 
                 <p><strong>Response time:</strong></p>
                 <ul>
-                    <li><strong>Urgent</strong> (platform down, bug kritis): 24 jam</li>
-                    <li><strong>Non-urgent</strong> (laporan, pertanyaan, request): 3 hari</li>
+                    <li><strong>Urgent</strong> (platform down, critical bugs): 24 hours</li>
+                    <li><strong>Non-urgent</strong> (reports, questions, requests): 3 days</li>
                 </ul>
             </section>
             
-            <!-- Section 10: REQUEST FITUR BARU -->
             <section class="tos-section">
                 <h2>
                     <span class="tos-section-number">10</span>
-                    REQUEST FITUR BARU
+                    NEW FEATURE REQUESTS
                 </h2>
-                <p>Investor dapat mengajukan request fitur. Developer akan mengevaluasi dan mengajukan:</p>
+                <p>Investor may submit feature requests. Developer will evaluate and propose:</p>
                 <ul>
-                    <li>Estimasi waktu development</li>
-                    <li>Biaya tambahan (jika di luar scope maintenance standar)</li>
-                    <li>Kesepakatan tertulis sebelum development dimulai</li>
+                    <li>Development time estimate</li>
+                    <li>Additional cost (if outside standard maintenance scope)</li>
+                    <li>Written agreement before development begins</li>
                 </ul>
             </section>
             
-            <!-- Section 11: DISPUTE RESOLUTION -->
             <section class="tos-section">
                 <h2>
                     <span class="tos-section-number">11</span>
                     DISPUTE RESOLUTION
                 </h2>
                 <ul>
-                    <li><strong>1. Diskusi baik-baik:</strong> Para pihak berkomitmen menyelesaikan perselisihan melalui komunikasi terbuka</li>
-                    <li><strong>2. Termination:</strong> Jika tidak tercapai kesepakatan, partnership dapat dihentikan sesuai terms di Section 7</li>
-                    <li><strong>3. Final settlement:</strong> Semua revenue yang terhutang dibayarkan sesuai minimum payout rules dalam 30 hari setelah termination</li>
+                    <li><strong>1. Good faith discussion:</strong> Parties commit to resolving disputes through open communication</li>
+                    <li><strong>2. Termination:</strong> If no agreement is reached, partnership may be terminated according to terms in Section 7</li>
+                    <li><strong>3. Final settlement:</strong> All owed revenue is paid according to minimum payout rules within 30 days after termination</li>
                 </ul>
             </section>
             
-            <!-- Section 12: LIMITATION OF LIABILITY -->
             <section class="tos-section">
                 <h2>
                     <span class="tos-section-number">12</span>
                     LIMITATION OF LIABILITY
                 </h2>
                 <ul>
-                    <li>Developer tidak bertanggung jawab atas kehilangan profit yang diakibatkan oleh downtime server yang wajar (< 99% uptime)</li>
-                    <li>Developer tidak bertanggung jawab atas tindakan user (client/worker) yang melanggar ketentuan platform</li>
-                    <li>Investor memahami bahwa ini adalah bisnis dengan risiko pasar, tidak ada jaminan profit minimum</li>
+                    <li>Developer is not responsible for profit loss caused by reasonable server downtime (< 99% uptime)</li>
+                    <li>Developer is not responsible for user actions (client/worker) that violate platform terms</li>
+                    <li>Investor understands that this is a business with market risks, no minimum profit guarantee</li>
                 </ul>
             </section>
             
-            <!-- Section 13: AMENDMENTS -->
             <section class="tos-section">
                 <h2>
                     <span class="tos-section-number">13</span>
                     AMENDMENTS
                 </h2>
-                <p>Perubahan ToS akan diinformasikan 14 hari sebelum efektif. Continued participation setelah perubahan berarti persetujuan.</p>
+                <p>ToS changes will be informed 14 days before taking effect. Continued participation after changes implies agreement.</p>
             </section>
             
-            <!-- Section 14: ACCEPTANCE -->
             <section class="tos-section">
                 <h2>
                     <span class="tos-section-number">14</span>
                     ACCEPTANCE
                 </h2>
-                <p>Dengan mengklik "Start Partnership" dan mengirim pesan WhatsApp, Investor menyatakan telah membaca, memahami, dan menyetujui seluruh Terms of Service ini.</p>
+                <p>By clicking "Start Partnership" and sending a WhatsApp message, the Investor declares having read, understood, and agreed to all these Terms of Service.</p>
             </section>
             
-            <!-- Contact Section -->
             <div class="tos-contact">
-                <h3><i class="fa-solid fa-address-book"></i> Kontak Developer</h3>
+                <h3><i class="fa-solid fa-address-book"></i> Developer Contact</h3>
                 <p><strong>WhatsApp:</strong> <a href="https://wa.me/<?php echo $whatsapp_number; ?>" target="_blank" rel="noopener"><?php echo $whatsapp_number; ?></a></p>
-                <p><strong>Response time:</strong> Sesuai Section 9</p>
+                <p><strong>Response time:</strong> As per Section 9</p>
             </div>
         </div>
     </div>
