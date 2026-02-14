@@ -350,7 +350,7 @@
                     <h3>Try the Demo Bot</h3>
                 </div>
                 <p>Interact with a fully working instance. Test the worker flow, view campaigns, check wallet features.</p>
-                <a href="#" class="btn btn-primary" target="_blank" rel="noopener">
+                <a href="https://t.me/smm_demo1_bot" class="btn btn-primary" target="_blank" rel="noreferrer noopener">
                     <i class="fa-brands fa-telegram"></i>
                     <span>Open Demo Bot</span>
                 </a>
@@ -630,7 +630,7 @@
                     <i class="fa-solid fa-chevron-down faq-chevron"></i>
                 </button>
                 <div class="faq-answer">
-                    <p>Absolutely. You get complete source code with full modification rights. Rebrand it, customize it, extend it — it's yours to shape however you want.</p>
+                    <p>Absolutely. You get complete source code with full modification rights. Rebrand it, customize it, extend it. It's yours to shape however you want.</p>
                 </div>
             </div>
             
@@ -640,7 +640,7 @@
                     <i class="fa-solid fa-chevron-down faq-chevron"></i>
                 </button>
                 <div class="faq-answer">
-                    <p>Basic setup guidance is included. The code is well-documented and structured for PHP developers. This is a source code purchase, not a SaaS subscription — you're expected to have PHP knowledge.</p>
+                    <p>Basic setup guidance is included. The code is well-documented and structured for PHP developers. This is a source code purchase, not a SaaS subscription. You're expected to have PHP knowledge.</p>
                 </div>
             </div>
             
@@ -650,7 +650,7 @@
                     <i class="fa-solid fa-chevron-down faq-chevron"></i>
                 </button>
                 <div class="faq-answer">
-                    <p>Any PHP hosting with MySQL/MariaDB and SSL support. Works on shared hosting ($5/month), VPS, or dedicated servers. No special requirements — if it runs PHP, it runs this bot.</p>
+                    <p>Any PHP hosting with MySQL/MariaDB and SSL support. Works on shared hosting ($5/month), VPS, or dedicated servers. No special requirements. If it runs PHP, it runs this bot.</p>
                 </div>
             </div>
             
@@ -660,7 +660,7 @@
                     <i class="fa-solid fa-chevron-down faq-chevron"></i>
                 </button>
                 <div class="faq-answer">
-                    <p>No. This is a legitimate PTC (Paid-To-Click) platform — a well-established advertising model. Clients pay for real ad views, workers earn for completing tasks. The business model is transparent and ethical.</p>
+                    <p>No. This is a legitimate PTC (Paid-To-Click) platform. A well-established advertising model. Clients pay for real ad views, workers earn for completing tasks. The business model is transparent and ethical.</p>
                 </div>
             </div>
             
