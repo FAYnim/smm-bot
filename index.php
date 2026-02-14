@@ -6,8 +6,45 @@ include "config.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telegram PTC Bot – Production Ready Source Code</title>
+    <title>Telegram PTC Bot Source Code – Launch Your Earning Platform</title>
     <meta name="description" content="Launch your own PTC earning platform with a production-ready Telegram bot. Built-in wallet, commission system, multi-role architecture. Limited to 5 copies.">
+    <meta name="keywords" content="telegram ptc bot, source code, php script, earning platform, telegram bot source code, ptc script, make money online bot, crypto earning bot">
+    <meta name="author" content="FayDev">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://app.faydev.my.id/smm-bot">
+    <meta property="og:title" content="Telegram PTC Bot Source Code – Launch Your Earning Platform">
+    <meta property="og:description" content="Launch your own PTC earning platform with a production-ready Telegram bot. Built-in wallet, commission system, multi-role architecture.">
+    <meta property="og:image" content="https://app.faydev.my.id/smm-bot/assets/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://app.faydev.my.id/smm-bot">
+    <meta property="twitter:title" content="Telegram PTC Bot Source Code – Launch Your Earning Platform">
+    <meta property="twitter:description" content="Launch your own PTC earning platform with a production-ready Telegram bot. Built-in wallet, commission system, multi-role architecture.">
+    <meta property="twitter:image" content="https://app.faydev.my.id/smm-bot/assets/og-image.png">
+
+    <link rel="canonical" href="https://app.faydev.my.id/smm-bot">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Telegram PTC Bot Source Code",
+      "operatingSystem": "Telegram, Web Server (PHP/MySQL)",
+      "applicationCategory": "BusinessApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "45.00",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/LimitedAvailability",
+        "priceValidUntil": "2026-12-31"
+      },
+      "description": "Production-ready Telegram PTC bot source code with built-in wallet system, commission engine, and multi-role architecture."
+    }
+    </script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +68,7 @@ include "config.php";
 <nav class="nav" id="nav">
     <div class="nav-inner">
         <a href="#" class="nav-logo">
-            <img src="favicon/favicon-32x32.png" alt="PTC Bot Logo" class="nav-logo-img">
+            <img src="favicon/favicon-32x32.png" alt="Telegram PTC Bot Source Code Logo" class="nav-logo-img">
             <span class="logo-bracket">[</span>PTC<span class="logo-dot">.</span>Bot<span class="logo-bracket">]</span>
         </a>
         <div class="nav-links">
