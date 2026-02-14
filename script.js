@@ -166,3 +166,24 @@ function toggleFaq(button) {
         answer.style.maxHeight = answer.scrollHeight + 'px';
     }
 }
+
+/* Partnership ToS Checkbox */
+document.addEventListener('DOMContentLoaded', () => {
+    const tosCheckbox = document.getElementById('tos-agree');
+    const partnershipBtn = document.getElementById('partnership-btn');
+    
+    if (tosCheckbox && partnershipBtn) {
+        // Initial state - button disabled
+        partnershipBtn.classList.add('btn-disabled');
+        
+        tosCheckbox.addEventListener('change', function() {
+            if (this.checked) {
+                partnershipBtn.disabled = false;
+                partnershipBtn.classList.remove('btn-disabled');
+            } else {
+                partnershipBtn.disabled = true;
+                partnershipBtn.classList.add('btn-disabled');
+            }
+        });
+    }
+});

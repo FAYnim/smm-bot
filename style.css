@@ -1898,6 +1898,111 @@ img {
 .anim-delay-4 { transition-delay: 0.4s; }
 .anim-delay-5 { transition-delay: 0.5s; }
 
+/* Partnership ToS Checkbox */
+.partnership-tos {
+    margin: 24px 0;
+    padding: 20px;
+    background: var(--bg-elevated);
+    border-radius: 12px;
+    border: 1px solid var(--border-subtle);
+}
+
+.partnership-tos p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.partnership-tos p a {
+    color: var(--accent-cyan);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.3s;
+}
+
+.partnership-tos p a:hover {
+    color: var(--text-primary);
+}
+
+.tos-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.tos-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.tos-checkbox-custom {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--border-light);
+    border-radius: 4px;
+    background: var(--bg-surface);
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.tos-checkbox input[type="checkbox"]:checked + .tos-checkbox-custom {
+    background: var(--accent-cyan);
+    border-color: var(--accent-cyan);
+}
+
+.tos-checkbox-custom::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 6px;
+    height: 10px;
+    border: solid var(--bg-deep);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg) scale(0);
+    transition: transform 0.2s ease;
+}
+
+.tos-checkbox input[type="checkbox"]:checked + .tos-checkbox-custom::after {
+    transform: rotate(45deg) scale(1);
+}
+
+.tos-checkbox:hover .tos-checkbox-custom {
+    border-color: var(--accent-cyan);
+}
+
+.tos-checkbox-label {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    transition: color 0.3s;
+}
+
+.tos-checkbox:hover .tos-checkbox-label {
+    color: var(--text-primary);
+}
+
+/* Disabled Button State */
+.btn-disabled,
+.btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    pointer-events: none;
+    filter: grayscale(30%);
+}
+
+.btn-disabled:hover,
+.btn:disabled:hover {
+    transform: none;
+    box-shadow: none;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
     .features-grid {

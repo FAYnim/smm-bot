@@ -756,7 +756,18 @@ include "config.php";
                             </ul>
                         </div>
                         
-                        <a href="https://wa.me/<?php echo $whatsapp_number; ?>?text=Hello!%20I'm%20interested%20in%20the%20Managed%20Partnership%20for%20the%20PTC%20Bot%20platform.%20I'd%20like%20to%20know%20more%20details%20about%20the%20revenue%20sharing%20options%20and%20how%20the%20partnership%20system%20works.%20Can%20you%20explain%20further%3F" class="btn btn-primary btn-glow btn-large" target="_blank" rel="noopener">
+                        <div class="partnership-tos">
+                            <p>By clicking "Start Partnership", you agree to our 
+                                <a href="partnership-terms.php" target="_blank">Partnership Terms of Service</a>.
+                            </p>
+                            <label class="tos-checkbox">
+                                <input type="checkbox" id="tos-agree">
+                                <span class="tos-checkbox-custom"></span>
+                                <span class="tos-checkbox-label">I have read and agree to the Partnership Terms</span>
+                            </label>
+                        </div>
+                        
+                        <a href="https://wa.me/<?php echo $whatsapp_number; ?>?text=Hello!%20I'm%20interested%20in%20the%20Managed%20Partnership%20for%20the%20PTC%20Bot%20platform.%20I'd%20like%20to%20know%20more%20details%20about%20the%20revenue%20sharing%20options%20and%20how%20the%20partnership%20system%20works.%20Can%20you%20explain%20further%3F" class="btn btn-primary btn-glow btn-large" id="partnership-btn" target="_blank" rel="noopener" disabled>
                             <span>Start Partnership</span>
                             <i class="fa-solid fa-handshake"></i>
                         </a>
