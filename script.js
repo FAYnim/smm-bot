@@ -91,6 +91,58 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+    
+    /* Tab Navigation */
+    const pricingTabs = document.querySelectorAll('.pricing-tab');
+    const tabPanels = document.querySelectorAll('.pricing-tab-panel');
+    const tabIndicator = document.querySelector('.pricing-tab-indicator');
+    
+    function switchTab(tabName) {
+        // Update tab buttons
+        pricingTabs.forEach(tab => {
+            if (tab.dataset.tab === tabName) {
+                tab.classList.add('active');
+            } else {
+                tab.classList.remove('active');
+            }
+        });
+        
+        // Update tab panels
+        tabPanels.forEach(panel => {
+            if (panel.id === 'panel-' + tabName) {
+                panel.classList.add('active');
+            } else {
+                panel.classList.remove('active');
+            }
+        });
+        
+        // Update URL hash
+        window.location.hash = tabName;
+    }
+    
+    // Tab click handlers
+    pricingTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const tabName = tab.dataset.tab;
+            switchTab(tabName);
+        });
+    });
+    
+    // Handle URL hash on load
+    function handleHashChange() {
+        const hash = window.location.hash.slice(1);
+        if (hash === 'source-code' || hash === 'partnership') {
+            switchTab(hash);
+        }
+    }
+    
+    // Check hash on load
+    if (window.location.hash) {
+        handleHashChange();
+    }
+    
+    // Listen for hash changes
+    window.addEventListener('hashchange', handleHashChange);
 });
 
 /* FAQ Toggle */

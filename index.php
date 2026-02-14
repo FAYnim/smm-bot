@@ -490,115 +490,254 @@
     <div class="container">
         <div class="section-label anim-slide-in">Pricing</div>
         <h2 class="section-title anim-slide-in">
-            Secure your copy<br>
-            <span class="text-amber">before the price goes up.</span>
+            Choose your<br>
+            <span class="text-amber">business model.</span>
         </h2>
         
-        <div class="pricing-card anim-slide-in">
-            <div class="pricing-card-inner">
-                <div class="pricing-badge">
-                    <span class="pricing-badge-pulse"></span>
-                    <span>Limited — 5 Copies Only</span>
-                </div>
-                
-                <div class="pricing-header">
-                    <div class="pricing-amount">
-                        <span class="pricing-currency">$</span>
-                        <span class="pricing-value">45</span>
-                    </div>
-                    <span class="pricing-period">one-time payment</span>
-                </div>
-                
-                <div class="pricing-escalation">
-                    <div class="pricing-escalation-bar">
-                        <div class="pricing-escalation-fill" style="width: 20%"></div>
-                    </div>
-                    <div class="pricing-escalation-info">
-                        <div class="pricing-escalation-item">
-                            <span class="pricing-escalation-label">Current Price</span>
-                            <span class="pricing-escalation-val text-accent">$45</span>
-                        </div>
-                        <div class="pricing-escalation-item">
-                            <span class="pricing-escalation-label">Next Price</span>
-                            <span class="pricing-escalation-val text-amber">$50</span>
-                        </div>
-                        <div class="pricing-escalation-item">
-                            <span class="pricing-escalation-label">Copies Left</span>
-                            <span class="pricing-escalation-val copies-left">5</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="pricing-includes">
-                    <h4>Everything included:</h4>
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            Complete source code
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            Telegram Bot + Admin Panel
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            Wallet & Commission System
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            Multi-role architecture
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            Campaign management
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            Analytics & logging
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-check"></i>
-                            Unlimited project usage
-                        </li>
-                    </ul>
-                </div>
-                
-                <a href="https://wa.me/YOUR_NUMBER?text=I%20want%20to%20purchase%20the%20PTC%20Bot%20source%20code" class="btn btn-primary btn-glow btn-large" target="_blank" rel="noopener">
-                    <span>Get Source Code Now</span>
-                    <i class="fa-solid fa-arrow-right"></i>
-                </a>
-                
-                <p class="pricing-notice">Manual verification. Source code delivered after confirmed payment via WhatsApp.</p>
-            </div>
+        <!-- Tab Navigation -->
+        <div class="pricing-tabs anim-slide-in">
+            <button class="pricing-tab active" data-tab="source-code">
+                <i class="fa-solid fa-code"></i>
+                <span>Source Code License</span>
+            </button>
+            <button class="pricing-tab" data-tab="partnership">
+                <i class="fa-solid fa-handshake"></i>
+                <span>Managed Partnership</span>
+            </button>
+            <div class="pricing-tab-indicator"></div>
         </div>
         
-        <div class="pricing-table anim-slide-in">
-            <h4>Price Escalation Schedule</h4>
-            <div class="pricing-table-grid">
-                <div class="pricing-table-row pricing-table-active">
-                    <span class="pricing-table-buyer">Copy #1</span>
-                    <span class="pricing-table-price">$45</span>
-                    <span class="pricing-table-status">Available Now</span>
+        <p class="pricing-microcopy anim-slide-in">
+            Choose self-hosted if you're a developer, or partnership if you want passive income without technical work.
+        </p>
+        
+        <div class="pricing-tabs-content">
+            <!-- Source Code License Tab -->
+            <div class="pricing-tab-panel active" id="panel-source-code">
+                <div class="pricing-card">
+                    <div class="pricing-card-inner">
+                        <div class="pricing-badge">
+                            <span class="pricing-badge-pulse"></span>
+                            <span>Limited — 5 Copies Only</span>
+                        </div>
+                        
+                        <div class="pricing-header">
+                            <div class="pricing-amount">
+                                <span class="pricing-currency">$</span>
+                                <span class="pricing-value">45</span>
+                            </div>
+                            <span class="pricing-period">one-time payment</span>
+                        </div>
+                        
+                        <div class="pricing-escalation">
+                            <div class="pricing-escalation-bar">
+                                <div class="pricing-escalation-fill" style="width: 20%"></div>
+                            </div>
+                            <div class="pricing-escalation-info">
+                                <div class="pricing-escalation-item">
+                                    <span class="pricing-escalation-label">Current Price</span>
+                                    <span class="pricing-escalation-val text-accent">$45</span>
+                                </div>
+                                <div class="pricing-escalation-item">
+                                    <span class="pricing-escalation-label">Next Price</span>
+                                    <span class="pricing-escalation-val text-amber">$50</span>
+                                </div>
+                                <div class="pricing-escalation-item">
+                                    <span class="pricing-escalation-label">Copies Left</span>
+                                    <span class="pricing-escalation-val copies-left">5</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="pricing-includes">
+                            <h4>Everything included:</h4>
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Complete source code
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Telegram Bot + Admin Panel
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Wallet & Commission System
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Multi-role architecture
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Campaign management
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Analytics & logging
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-check"></i>
+                                    Unlimited project usage
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <a href="https://wa.me/YOUR_NUMBER?text=I%20want%20to%20purchase%20the%20PTC%20Bot%20source%20code" class="btn btn-primary btn-glow btn-large" target="_blank" rel="noopener">
+                            <span>Get Source Code Now</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        
+                        <p class="pricing-notice">Manual verification. Source code delivered after confirmed payment via WhatsApp.</p>
+                    </div>
                 </div>
-                <div class="pricing-table-row">
-                    <span class="pricing-table-buyer">Copy #2</span>
-                    <span class="pricing-table-price">$50</span>
-                    <span class="pricing-table-status">—</span>
+                
+                <div class="pricing-table">
+                    <h4>Price Escalation Schedule</h4>
+                    <div class="pricing-table-grid">
+                        <div class="pricing-table-row pricing-table-active">
+                            <span class="pricing-table-buyer">Copy #1</span>
+                            <span class="pricing-table-price">$45</span>
+                            <span class="pricing-table-status">Available Now</span>
+                        </div>
+                        <div class="pricing-table-row">
+                            <span class="pricing-table-buyer">Copy #2</span>
+                            <span class="pricing-table-price">$50</span>
+                            <span class="pricing-table-status">—</span>
+                        </div>
+                        <div class="pricing-table-row">
+                            <span class="pricing-table-buyer">Copy #3</span>
+                            <span class="pricing-table-price">$55</span>
+                            <span class="pricing-table-status">—</span>
+                        </div>
+                        <div class="pricing-table-row">
+                            <span class="pricing-table-buyer">Copy #4</span>
+                            <span class="pricing-table-price">$60</span>
+                            <span class="pricing-table-status">—</span>
+                        </div>
+                        <div class="pricing-table-row">
+                            <span class="pricing-table-buyer">Copy #5</span>
+                            <span class="pricing-table-price">$65</span>
+                            <span class="pricing-table-status">Final Copy</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="pricing-table-row">
-                    <span class="pricing-table-buyer">Copy #3</span>
-                    <span class="pricing-table-price">$55</span>
-                    <span class="pricing-table-status">—</span>
+            </div>
+            
+            <!-- Managed Partnership Tab -->
+            <div class="pricing-tab-panel" id="panel-partnership">
+                <div class="pricing-card partnership-card">
+                    <div class="pricing-card-inner">
+                        <div class="partnership-badge">
+                            <i class="fa-solid fa-crown"></i>
+                            <span>Fully Managed</span>
+                        </div>
+                        
+                        <div class="partnership-header">
+                            <div class="partnership-icon">
+                                <i class="fa-solid fa-handshake"></i>
+                            </div>
+                            <h3>Passive Income Platform</h3>
+                            <p>You own the platform. We handle everything.</p>
+                        </div>
+                        
+                        <div class="partnership-options">
+                            <div class="partnership-option">
+                                <div class="partnership-option-header">
+                                    <span class="partnership-option-title">Pure Revenue Share</span>
+                                    <span class="partnership-option-tag">No Upfront</span>
+                                </div>
+                                <div class="partnership-split">
+                                    <div class="partnership-split-item investor">
+                                        <span class="split-percent">80%</span>
+                                        <span class="split-label">You (Investor)</span>
+                                    </div>
+                                    <div class="partnership-split-divider">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                    <div class="partnership-split-item developer">
+                                        <span class="split-percent">20%</span>
+                                        <span class="split-label">Developer</span>
+                                    </div>
+                                </div>
+                                <p class="partnership-option-desc">Profit sharing based on monthly revenue. No setup fees.</p>
+                            </div>
+                            
+                            <div class="partnership-option-divider">
+                                <span>or</span>
+                            </div>
+                            
+                            <div class="partnership-option">
+                                <div class="partnership-option-header">
+                                    <span class="partnership-option-title">Hybrid Model</span>
+                                    <span class="partnership-option-tag">Lower Risk</span>
+                                </div>
+                                <div class="partnership-setup">
+                                    <div class="partnership-setup-fee">
+                                        <span class="setup-currency">$</span>
+                                        <span class="setup-value">100</span>
+                                        <span class="setup-label">one-time setup</span>
+                                    </div>
+                                    <div class="partnership-setup-share">
+                                        + 15% <span>monthly revenue</span>
+                                    </div>
+                                </div>
+                                <p class="partnership-option-desc">Lower ongoing share in exchange for initial investment.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="partnership-features">
+                            <h4><i class="fa-solid fa-shield-halved"></i> What's Included:</h4>
+                            <ul>
+                                <li>
+                                    <i class="fa-solid fa-code-branch"></i>
+                                    Continuous development & new features
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                                    Automatic updates & patches
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-server"></i>
+                                    24/7 server monitoring
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bug"></i>
+                                    Bug fixes included
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-headset"></i>
+                                    Priority technical support
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-laptop-code"></i>
+                                    Zero technical hassle
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <a href="https://wa.me/YOUR_NUMBER?text=I%27m%20interested%20in%20the%20Managed%20Partnership%20model" class="btn btn-primary btn-glow btn-large" target="_blank" rel="noopener">
+                            <span>Start Partnership</span>
+                            <i class="fa-solid fa-handshake"></i>
+                        </a>
+                        
+                        <p class="pricing-notice">Contract agreement required. Monthly revenue reports & transparent split.</p>
+                    </div>
                 </div>
-                <div class="pricing-table-row">
-                    <span class="pricing-table-buyer">Copy #4</span>
-                    <span class="pricing-table-price">$60</span>
-                    <span class="pricing-table-status">—</span>
-                </div>
-                <div class="pricing-table-row">
-                    <span class="pricing-table-buyer">Copy #5</span>
-                    <span class="pricing-table-price">$65</span>
-                    <span class="pricing-table-status">Final Copy</span>
+                
+                <div class="pricing-card partnership-trust">
+                    <div class="trust-item">
+                        <i class="fa-solid fa-file-contract"></i>
+                        <span>Legal Contract</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>Monthly Reports</span>
+                    </div>
+                    <div class="trust-item">
+                        <i class="fa-solid fa-building"></i>
+                        <span>Verified Business</span>
+                    </div>
                 </div>
             </div>
         </div>
