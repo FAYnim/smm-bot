@@ -1,4 +1,95 @@
-/* Scroll Animations */
+/* Ubah nilai ini saat ada copy terjual (1-5) */
+const currentSold = 2;
+
+const priceEscalation = [
+    { copy: 1, price: 45, status: 'Available Now' },
+    { copy: 2, price: 50, status: '—' },
+    { copy: 3, price: 55, status: '—' },
+    { copy: 4, price: 60, status: '—' },
+    { copy: 5, price: 65, status: 'Final Copy' }
+];
+
+function getPriceInfo(copyNumber) {
+    const clamped = Math.max(1, Math.min(copyNumber, priceEscalation.length));
+    const current = priceEscalation[clamped - 1];
+    const next = clamped < priceEscalation.length ? priceEscalation[clamped] : null;
+    const copiesLeft = priceEscalation.length - clamped + 1;
+
+    return {
+        currentCopy: clamped,
+        currentPrice: current.price,
+        nextPrice: next ? next.price : null,
+        copiesLeft: copiesLeft,
+        status: current.status,
+        escalation: priceEscalation.map(item => ({
+            ...item,
+            status: item.copy < clamped ? 'Sold'
+                  : item.copy === clamped ? 'Available Now'
+                  : item.copy === priceEscalation.length ? 'Final Copy'
+                  : '—'
+        }))
+    };
+}
+
+function calculateProgress(copyNumber) {
+    const soldCount = copyNumber - 1;
+    return (soldCount / priceEscalation.length) * 100;
+}
+
+function updateEscalationDisplay(copyNumber) {
+    const info = getPriceInfo(copyNumber);
+    const progress = calculateProgress(copyNumber);
+
+    const fillBar = document.querySelector('.pricing-escalation-fill');
+    if (fillBar) {
+        fillBar.style.width = progress + '%';
+    }
+
+    const currentPriceEl = document.querySelector('.pricing-escalation-val.text-accent');
+    if (currentPriceEl) {
+        currentPriceEl.textContent = '$' + info.currentPrice;
+    }
+
+    const nextPriceEl = document.querySelector('.pricing-escalation-val.text-amber');
+    if (nextPriceEl) {
+        nextPriceEl.textContent = info.nextPrice !== null ? '$' + info.nextPrice : '—';
+    }
+
+    const copiesLeftEl = document.querySelector('.copies-left');
+    if (copiesLeftEl) {
+        copiesLeftEl.textContent = info.copiesLeft;
+    }
+
+    const rows = document.querySelectorAll('.pricing-table-row');
+    rows.forEach((row, index) => {
+        const rowData = info.escalation[index];
+        if (!rowData) return;
+
+        row.classList.remove('pricing-table-active');
+        if (rowData.copy === info.currentCopy) {
+            row.classList.add('pricing-table-active');
+        }
+
+        const statusEl = row.querySelector('.pricing-table-status');
+        if (statusEl) {
+            statusEl.textContent = rowData.status;
+        }
+    });
+
+    const ctaBtn = document.querySelector('#panel-source-code .btn-primary');
+    if (ctaBtn) {
+        const msg = encodeURIComponent(
+            `Hello! I'm interested in the PTC Bot source code for sale. I saw the landing page and want to purchase. Is copy #${info.currentCopy} still available at $${info.currentPrice}? Please provide more information.`
+        );
+        ctaBtn.href = ctaBtn.href.replace(/\?text=.*$/, '?text=' + msg);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    updateEscalationDisplay(currentSold);
+});
+
+/* Scroll & Animations */
 document.addEventListener('DOMContentLoaded', () => {
     const observerOptions = {
         threshold: 0.1,
@@ -18,7 +109,6 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    /* Navbar Scroll */
     const nav = document.getElementById('nav');
     let lastScrollY = 0;
 
@@ -34,7 +124,6 @@ document.addEventListener('DOMContentLoaded', () => {
         lastScrollY = scrollY;
     }, { passive: true });
 
-    /* Terminal Animation */
     const terminalLines = document.querySelectorAll('.terminal-line');
     
     const terminalObserver = new IntersectionObserver((entries) => {
@@ -76,7 +165,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    /* Smooth Scroll */
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
@@ -92,13 +180,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-    /* Tab Navigation */
     const pricingTabs = document.querySelectorAll('.pricing-tab');
     const tabPanels = document.querySelectorAll('.pricing-tab-panel');
     const tabIndicator = document.querySelector('.pricing-tab-indicator');
     
     function switchTab(tabName) {
-        // Update tab buttons
         pricingTabs.forEach(tab => {
             if (tab.dataset.tab === tabName) {
                 tab.classList.add('active');
@@ -106,8 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 tab.classList.remove('active');
             }
         });
-        
-        // Update tab panels
+
         tabPanels.forEach(panel => {
             if (panel.id === 'panel-' + tabName) {
                 panel.classList.add('active');
@@ -115,33 +200,25 @@ document.addEventListener('DOMContentLoaded', () => {
                 panel.classList.remove('active');
             }
         });
-        
-        // Update URL hash
+
         window.location.hash = tabName;
     }
-    
-    // Tab click handlers
+
     pricingTabs.forEach(tab => {
         tab.addEventListener('click', () => {
             const tabName = tab.dataset.tab;
             switchTab(tabName);
         });
     });
-    
-    // Handle URL hash on load
+
     function handleHashChange() {
         const hash = window.location.hash.slice(1);
         if (hash === 'source-code' || hash === 'partnership') {
             switchTab(hash);
         }
     }
-    
-    // Check hash on load
-    if (window.location.hash) {
-        handleHashChange();
-    }
-    
-    // Listen for hash changes
+
+    if (window.location.hash) handleHashChange();
     window.addEventListener('hashchange', handleHashChange);
 });
 
@@ -167,13 +244,12 @@ function toggleFaq(button) {
     }
 }
 
-/* Partnership ToS Checkbox */
+/* ToS Checkbox */
 document.addEventListener('DOMContentLoaded', () => {
     const tosCheckbox = document.getElementById('tos-agree');
     const partnershipBtn = document.getElementById('partnership-btn');
-    
+
     if (tosCheckbox && partnershipBtn) {
-        // Initial state - button disabled
         partnershipBtn.classList.add('btn-disabled');
         
         tosCheckbox.addEventListener('change', function() {
